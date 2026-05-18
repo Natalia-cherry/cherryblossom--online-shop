@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHERRY BUBBLES STORE</title>
+
+
+</head>
+
+ <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("download\ \(49\).jpg");
+}
+
+/* Center everything */
+.container {
+    text-align: center;
+}
+
+/* Title styling */
+.title {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    color: #b3003c;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.subtitle {
+    font-size: 28px;
+    letter-spacing: 8px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Glassmorphism card */
+.login-card {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Inputs */
+.login-card input {
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #b3003c;
+    background: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.login-card input:focus {
+    border-color: #ff4d6d;
+}
+
+/* Button */
+.login-card button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #b3003c;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-card button:hover {
+    background: #ff4d6d;
+    transform: scale(1.05);
+
+    .scroll-text {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+/* Top fixed banner */
+.top-marquee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    overflow: hidden;
+    background: linear-gradient(135deg, #a10034, #ff4d6d);
+    color: white;
+
+    z-index: 1000; /* stays above everything */
+}
+
+/* Moving track */
+.track {
+    display: flex;
+    width: max-content;
+    animation: scroll 10s linear infinite;
+}
+
+.track span {
+    padding: 12px 40px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+/* Animation */
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+    }
+
+</style>
+<body>
+    <div class="top-marquee">
+  <div class="track">
+    <span>🍒 Cherry Bubbles Store • Cute Styles • Shop Now • </span>
+    
+  </div>
+
+</marquee>
+    <div class="container">
+    <h1 class="title">Cherry Bubbles</h1>
+    <h2 class="subtitle">STORE</h2>
+    <form class="login-card">
+  <h2>Welcome Back</h2>
+
+  <div class="input-group">
+    <input type="text" name="username" required>
+    <label>Username</label>
+  </div>
+
+  <div class="input-group">
+    <input type="password" name="password" required>
+    <label>Password</label>
+  </div>
+
+  
+<button class="btn" onclick="window.location.href='form.html'">
+   Login
+</button>
+
+  <p class="extra">Don’t have an account? <span>Sign up</span></p>
+</form>
+
+
+
+    </div>
+
+</body>
+</html>
